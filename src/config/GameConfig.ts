@@ -1,0 +1,23 @@
+export const GameConfig = {
+  WIDTH: 1280,
+  HEIGHT: 720,
+  TILE_SIZE: 32,
+  MAP_COLS: 60,
+  MAP_ROWS: 60,
+  PLAYER_SPEED: 200,
+  PLAYER_MAX_HP: 100,
+  PLAYER_DAMAGE: 10,
+  AUTO_ATTACK_RANGE: 60,
+  AUTO_ATTACK_COOLDOWN: 500,
+  XP_BASE: 50,
+  XP_MULTIPLIER: 1.3,
+  WAVE_DELAY: 5000,
+  WAVE_BASE_ENEMIES: 5,
+  WAVE_ENEMY_INCREMENT: 3,
+  ENEMY_TYPES: {
+    normal: { speed: 80, hp: 30, damage: 8, xp: 10, color: 0x44ff44, size: 12 },
+    fast: { speed: 180, hp: 15, damage: 5, xp: 15, color: 0x44ffff, size: 9 },
+    tank: { speed: 40, hp: 100, damage: 15, xp: 25, color: 0xff4444, size: 18 },
+    boss: { speed: 60, hp: 500, damage: 25, xp: 100, color: 0xff00ff, size: 26 },
+  } as Record<string, { speed: number; hp: number; damage: number; xp: number; color: number; size: number }>,
+};
